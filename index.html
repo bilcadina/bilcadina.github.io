@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>CV</h1>
+            <h2>Bilc Adina Felicia</h2>
+            <img src="Maya.jpg" width="100" class="Maya">
+
+            <p id="job-title">Web Developer</p>
+        </div>
+
+        <ul id="top-menu-bar">
+            <li><a href="#" onclick="showHome()">Home</a></li>
+            <li><a href="#" onclick="showSkills()">Skills</a></li>
+            <li><a href="#" onclick="showProjects()">Projects</a></li>
+            <li><a href="#" onclick="showLanguages()">Languages</a></li>
+            
+        </ul>
+    </header>
+
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <form action="">
+                <label for="e">Email</label>
+                <input type="email" id="e" name="em">
+                <input type="text" id="name" name="nume" placeholder="Your name">
+                <button>
+                    Contact us
+                </button>
+                </form>
+            </section>
+
+            <section>...</section>
+        </div>
+
+        <div id="main";>
+            <div id="home" class="page">
+                <h2>Home</h2>
+                BIne ai venit. aici poate este despre....
+            </div>
+
+            <div id="skills" class="page" style="display:none;" >
+                <h2>Skills & Endorcements</h2>
+                <ul>
+                    <li class="favorite">Html</li>
+                    <li style>Java Script</li>
+                    <li class="favorite">Css </li>
+        
+                </ul>
+            </div>
+
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                hmm...
+            
+            </div>
+
+            <div id="languages" class="page" style="display:none;" >
+                <table border="3">
+                    <tr>
+                        <h2>Known Languages</h2>
+                        <td><b>Romana</b></td>
+                        <td>C1</td>
+                    </tr>
+                    <tr>
+                        <td><b>Engleza</b></td>
+                        <td>C1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    
+    <style>
+        body {
+            background-color: rgb(229, 240, 232);
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+
+            color:rgb(85, 87, 223) 
+             border 5px dashed rgb(162, 206, 173)
+            }
+
+        header, footer, #side-menu section {
+             margin: 2px;
+             padding: 4px;
+            } 
+        #content{
+                margin: 2px;
+                padding: 4px;
+            }
+        #side-menu, #main {
+            margin: 2px;
+            padding: 4px;
+            }
+        body{
+            margin:0px;
+            min-height: 100%;
+            display:flex;
+            flex-direction: column;
+            }
+        header, body > section {
+           flex:1;
+        }
+        #content {
+            flex: 4;
+            flex-direction:row;
+            display:flex;
+        }
+        #side-menu{
+            flex: 1;
+        }
+        #main {
+            flex: 4;
+        }
+        footer {
+            min-height: 20px;
+        } 
+        
+    </style>
+    </table>
+
+    <footer><a target="_blank_" href="https://fasttrackit.org/blog/">Curs web
+            </a>
+    </footer>
+
+    <script src="functions.js">
+    </script>
+
+    <script>
+    /*console.info(2+4);
+      var name='Adina';
+      console.info(name);
+      var x = 4 ;
+      var y = 135 - x ;
+      console.info(y);
+      var skills = ['html', 'css', 'js'];
+      console.info(skills)};
+      */
+    </script>
+     
+</body>
+</html>
