@@ -1,5 +1,4 @@
 function hide(id){
-    //document.getElementById(id).style.display = "none";
     var el = document.getElementById(id)
     console.info("hide:" + id,el);
    
@@ -10,11 +9,15 @@ function hide(id){
     }
 }
 
-function hideAllPages(){
-    hide("home");
-    hide("skills")
-    hide("projects");
-    hide("languages");
+
+    var pages = document.querySelectorAll(".page");
+    //for(initializare; conditie; post execute)
+    for(var i = 0; i < pages.lenght; i++)
+        var page = pages[i];
+        var id = pages[i].id; {
+        console.info("i=", i, id);
+        hide(id)
+    }
 }
 
 function showHome() {
