@@ -12,15 +12,19 @@ body{
 div {background-color: #fff;}
  
   #header{
+      background-color: rgb(88, 100, 76);
      align-content:stretch;
      padding: 100px;
      width: 200px;
      height: 250px;
 
 }
+   h1, h2 {
+        color:rgb(206, 190, 192);
+    }
 
   #job-title{
-     color: rgb(18, 124, 35);
+     color: rgb(26, 31, 27);
      text-align:right;
    }
    #side-menu{
@@ -30,8 +34,8 @@ div {background-color: #fff;}
 
     #top-menu-bar {
         text-align: center;
-        color:rgb(8, 61, 30);
-        background-color: #9ac0e7;
+        color:rgb(228, 241, 232);
+        background-color: #29352b;
     }
     #top-menu-bar li{
         display: inline;
@@ -41,12 +45,12 @@ div {background-color: #fff;}
     #top-menu-bar a {
         text-decoration: none;
          padding: 5 15px 5 15px;
-         color: #fff;
+         color: rgb(245, 241, 241);
          display: inline-block;
     }   
 
-    #top-menu-bar a:visited{
-        color:#fff
+    #top-menu-bar a:visited {
+        color:rgb(242, 248, 244)
     }
 
     #top-menu-bar a:hover{
@@ -55,7 +59,7 @@ div {background-color: #fff;}
     }
 
       .page {
-          background-color: #fff;
+          background-color: rgba(208, 214, 209, 0.151);
           margin: 16px 0;
           padding: 24px;
           box-shadow: 0 0 0 1px;
@@ -63,7 +67,7 @@ div {background-color: #fff;}
     }
 
     li {
-        color:blue;
+        color:rgb(42, 43, 35);
     }
     table {background-color:rgb(194, 240, 202)}
 
