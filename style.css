@@ -2,7 +2,7 @@ html{
     height: 100%;
 }
 body{
-    background-color: #f5f5f5;
+    background-color: #eecece;
     margin: 200px;
     margin-top: 50px;
     padding: 10;
@@ -10,10 +10,17 @@ body{
   }
   
 div {background-color: #fff;}
+ 
+  #header{
+     align-content:stretch;
+     padding: 100px;
+     width: 200px;
+     height: 250px;
 
+}
 
-#job-title{
-     color: blue;
+  #job-title{
+     color: rgb(18, 124, 35);
      text-align:right;
    }
    #side-menu{
@@ -61,13 +68,13 @@ div {background-color: #fff;}
     table {background-color:rgb(194, 240, 202)}
 
 .favorite {
-    background-color:rgb(13, 90, 71); 
+    background-color:rgb(24, 219, 170); 
     font-style: italic; 
     color: rgb(220, 208, 231);
     }
     footer {
-        min-height: 20px;
-        padding: 10px;
+        min-height: 10px;
+        padding: 5px;
         text-align: center;
         background-color: rgb(248, 242, 242);
     }
