@@ -1,30 +1,41 @@
     html{
     height: 100%;
     }
-
     div {
-        font-style: italic;
-    background-color: rgb(248, 247, 247);
+        background-color: rgb(255, 249, 251);
+}
+    head {
+        text-align: center;
     }
     img {
+        cursor: pointer;
         border-radius: 50%;
     }
+    .Maya{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width: 10%;
+    }
+
     #header{
-    background-color: rgba(201, 201, 124, 0.356);
+     background-color: rgb(61, 61, 49);
      align-content:stretch;
      padding: 100px;
      width: 200px;
      height: 250px;
     }
     h1, h2 {
-        color:rgb(70, 73, 70);
+        text-align: center;
+        color:rgb(42, 38, 43);
     }
 
     body{
-        background-color: #8a8488;
-        margin: 200px;
-        margin-top: 50px;
-        padding: 5px;
+        margin: 500px;
+        margin-top: 100px;
+        min-height: 200%;
+        background-color: #ebd3e5;
+        padding:100px;
         flex-direction: 4;
         min-height: 100%;
         display:flex;
@@ -41,7 +52,7 @@
     #top-menu-bar  {
         text-align: center;
         color:rgb(228, 241, 232);
-        background-color: #29352b;
+        background-color: #636162;
     }
     #top-menu-bar li{
         display: inline;
@@ -51,7 +62,7 @@
     #top-menu-bar a {
         text-decoration: none;
          padding: 5 15px 5 15px;
-         color: rgb(245, 241, 241);
+         color: rgb(122, 24, 24);
          display: inline-block;
     }   
 
@@ -65,9 +76,9 @@
     }
 
       .page {
-          background-color: rgba(15, 100, 29, 0.151);
-          margin: 16px 0;
-          padding: 24px;
+          background-color: rgb(234, 250, 237);
+          margin: 5px 0;
+          padding: 15px;
           box-shadow: 0 0 0 1px;
           border-radius: 2px;     
     }
@@ -76,12 +87,6 @@
         color:rgb(42, 43, 35);
     }
     table {background-color:rgb(195, 209, 197)}
-
-    .favorite {
-    background-color:rgba(3, 36, 27, 0.863); 
-    font-style: italic; 
-    color: rgb(220, 208, 231);
-    }
 
     header, #side-menu section {
          margin: 2px;
@@ -115,4 +120,6 @@
         text-align: center;
         background-color: rgb(210, 228, 210);
     } 
-    
+    #foot {
+        align-content: flex-end;
+    }    

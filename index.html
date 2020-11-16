@@ -10,21 +10,20 @@
 
 <body>
     <header>
-        <div id="header">
+        <div id="head">
             <h1>CV</h1>
             <h2>Bilc Adina Felicia</h2>
-            <img src="eu.jpeg" width="100" class="Maya">
-
+           <span><img src="eu.jpeg" width="100" class="Maya"></span>
             <p id="job-title">Web Developer</p>
         </div>
-
+        <div>
         <ul id="top-menu-bar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Languages</a></li>
-            
+            <li><a href="#" onclick="showHome()">Home</a></li>
+            <li><a href="#" onclick="showSkills()">Skills</a></li>
+            <li><a href="#" onclick="showProjects()">Projects</a></li>
+            <li><a href="#" onclick="showLanguages()">Languages</a></li>
         </ul>
+        </div>
     </header>
 
     <section id="content">
@@ -52,7 +51,10 @@
             <div id="skills" class="page" style="display:none;" >
                 <h2>Skills & Endorcements</h2>
                 <ul>
-            
+                    <li class="favorite">Html</li>
+                    <li style>Java Script</li>
+                    <li class="favorite">Css </li>
+        
                 </ul>
             </div>
 
@@ -79,6 +81,54 @@
 
     </section>
     
+    <style>
+        body {
+            background-color: rgb(75, 66, 72);
+        }
+
+        p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+        header, footer, #side-menu section {
+             margin: 2px;
+             padding: 4px;
+            } 
+        #content{
+                margin: 2px;
+                padding: 4px;
+            }
+        #side-menu, #main {
+            margin: 2px;
+            padding: 4px;
+            }
+        body{
+            margin:0px;
+            min-height: 100%;
+            display:flex;
+            flex-direction: column;
+            }
+        header, body > section {
+           flex:1;
+        }
+        #content {
+            flex: 4;
+            flex-direction:row;
+            display:flex;
+        }
+        #side-menu{
+            flex: 1;
+        }
+        #main {
+            flex: 4;
+        }
+        footer {
+            height: 50px;
+            min-height: 2px;
+        } 
+        
+    </style>
     </table>
 
     <footer>
