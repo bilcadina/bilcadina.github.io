@@ -1,34 +1,39 @@
-html{
+    html{
     height: 100%;
-}
-body{
-    background-color: #ffffff;
-    margin: 200px;
-    margin-top: 50px;
-    padding: 10;
-    flex-direction: 4;
-  }
-  
-div {background-color: rgb(248, 247, 247);}
+    }
 
- 
-  #header{
-    background-color: rgb(29, 29, 28);
+    div {
+        font-style: italic;
+    background-color: rgb(248, 247, 247);
+    }
+    img {
+        border-radius: 50%;
+    }
+    #header{
+    background-color: rgba(201, 201, 124, 0.356);
      align-content:stretch;
      padding: 100px;
      width: 200px;
-     height: 150px;
-
-}
-   h1, h2 {
-        color:rgb(206, 190, 192);
+     height: 250px;
+    }
+    h1, h2 {
+        color:rgb(70, 73, 70);
     }
 
-  #job-title{
+    body{
+        background-color: #ee9999;
+        margin: 200px;
+        margin-top: 50px;
+        padding: 5px;
+        flex-direction: 4;
+        min-height: 100%;
+        display:flex;
+    }
+   #job-title{
      color: rgb(26, 31, 27);
      text-align:right;
    }
-   #side-menu{
+    #side-menu{
        float: 1;
        padding: 30px;
    }
@@ -60,7 +65,7 @@ div {background-color: rgb(248, 247, 247);}
     }
 
       .page {
-          background-color: rgba(208, 214, 209, 0.151);
+          background-color: rgba(15, 100, 29, 0.151);
           margin: 16px 0;
           padding: 24px;
           box-shadow: 0 0 0 1px;
@@ -72,15 +77,42 @@ div {background-color: rgb(248, 247, 247);}
     }
     table {background-color:rgb(195, 209, 197)}
 
-.favorite {
+    .favorite {
     background-color:rgba(3, 36, 27, 0.863); 
     font-style: italic; 
     color: rgb(220, 208, 231);
     }
-    footer {
-        min-height: 10px;
-        padding: 5px;
-        text-align: center;
-        background-color: rgb(248, 242, 242);
-    }
 
+    header, #side-menu section {
+         margin: 2px;
+         padding: 4px;
+        } 
+    #content{
+            margin: 10px;
+            padding: 4px;
+        }
+    #side-menu, #main {
+        margin: 2px;
+        padding: 4px;
+        }
+    
+    header, body , section {
+       flex:1;
+    }
+    #content {
+        flex: 4;
+        flex-direction:row;
+        display:flex;
+    }
+    #side-menu{
+        flex: 1;
+    }
+    #main {
+        flex: 4;
+    }
+    footer {
+        height: 4px;
+        text-align: center;
+        background-color: rgb(210, 228, 210);
+    } 
+    
