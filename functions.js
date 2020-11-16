@@ -1,7 +1,5 @@
-function hide(id){
-    var el = document.getElementById(id)
-    console.info("hide:" + id,el);
-   
+function hide(id) {
+    var el = document.getElementById(id);
     if (el) {
         el.style.display = "none";
     } else {
@@ -21,20 +19,4 @@ function hideAllPages(){
 function showPage(pageId) {
     hideAllPages();
     document.getElementById(pageId).style.display = "";
-}
-
-function showHome() {
-   showPage('home');
-}
-
-function showSkills() {
-   showPage('skills');
-}
-
-function showProjects() {
-   showPage("projects");
-}
-
-function showLanguages() {
-   showPage("languages");
 }
