@@ -9,9 +9,10 @@ function hide(id) {
 
 function hideAllPages(){
     var pages = document.querySelectorAll(".page");
-    for(var i = 0; i < pages.lenght; i++) {
+    for(var i = 0; i < pages.length; i++) {
+        // hide(pages[i].id);
         var page = pages[i];
-        var id = page.id; 
+        var id = page.id;
         hide(id);  
     }
 }
@@ -27,6 +28,7 @@ function initMenu(){
         if (link.matches("#top-menu-bar a")) {
             var id = link.innerHTML.toLowerCase();
             showPage(id);
+            link.classList.add("active");
         }
     })
 }
@@ -47,6 +49,6 @@ var skillsLi = skills.map(function(skill){
 
 // TO DO add skill favorite
 var ul = document.querySelector("#skills ul")
-ul.innerHTML =  skillsLi[0] +
-                skillsLi[1] +
-                skillsLi[2] ;
+ul.innerHTML =  skillsLi.join("");
+
+               

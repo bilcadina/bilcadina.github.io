@@ -18,10 +18,10 @@
         </div>
         <div>
         <ul id="top-menu-bar">
-            <li><a href="#" onclick="showHome()">Home</a></li>
-            <li><a href="#" onclick="showSkills()">Skills</a></li>
-            <li><a href="#" onclick="showProjects()">Projects</a></li>
-            <li><a href="#" onclick="showLanguages()">Languages</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#" >Languages</a></li>
         </ul>
         </div>
     </header>
@@ -38,8 +38,9 @@
                 </button>
                 </form>
             </section>
-
-            <section>...</section>
+                <div id="motto">
+                <section>.."There are no secrets to success. It is the result of preparation, hard work, and learning from failure."..</section>   
+                </div>
         </div>
 
         <div id="main";>
@@ -60,7 +61,7 @@
 
             <div id="projects" class="page" style="display: none;">
                 <h2>Projects</h2>
-                hmm...
+                  Site in construction !
             
             </div>
 
@@ -83,7 +84,7 @@
     
     <style>
         body {
-            background-color: rgb(75, 66, 72);
+            background-color: rgba(16, 24, 48, 0.979);
         }
 
         p {
@@ -95,6 +96,10 @@
              margin: 2px;
              padding: 4px;
             } 
+        header{
+                background-image: url(sky.jpg);
+                
+            }
         #content{
                 margin: 2px;
                 padding: 4px;
@@ -102,6 +107,11 @@
         #side-menu, #main {
             margin: 2px;
             padding: 4px;
+            }
+         #motto{
+             font-style: italic;
+             display: flex;
+
             }
         body{
             margin:0px;
