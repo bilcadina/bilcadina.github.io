@@ -41,12 +41,15 @@ showPage(activePage);
 
 
 
-var skills = [
+var allSkills = [
+    //tema se le aranjam cu functia sort cu endorsm mai mare sau alfabet
     { name: "HTML", endorsments: 10 },
     { name: "CSS" , endorsments: 7 },
     { name: "JS", endorsments: 7 }
 ];
-var skillsLi = skills.map(function(skill,i){
+
+function showSkills(skills) {
+    var skillsLi = skills.map(function(skill){
     var endorsments = ` <span>&middot; ${skill.endorsments}</span>`;
         return "<li>" + skill.name + endorsments +"</li>";
 });
@@ -54,5 +57,5 @@ var skillsLi = skills.map(function(skill,i){
 // TO DO add skill favorite
 var ul = document.querySelector("#skills ul")
 ul.innerHTML =  skillsLi.join("");
-
-               
+}
+showSkills(allSkills);
