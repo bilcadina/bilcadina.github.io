@@ -1,3 +1,5 @@
+var activePage = "skills";
+
 function hide(id) {
     var el = document.getElementById(id);
     if (el) {
@@ -7,19 +9,14 @@ function hide(id) {
     }
 }
 
-function hideAllPages(){
-    var pages = document.querySelectorAll(".page");
-    for(var i = 0; i < pages.length; i++) {
-        // hide(pages[i].id);
-        var page = pages[i];
-        var id = page.id;
-        hide(id);  
-    }
+function hidePreviousPage () {
+    hide(activePage);
 }
 
 function showPage(pageId) {
-    hideAllPages();
+   hidePreviousPage();
     document.getElementById(pageId).style.display = "";
+    activePage = pageId;
 }
 
 function initMenu(){
@@ -35,7 +32,7 @@ function initMenu(){
 
 initMenu();
 
-showPage("skills");
+showPage(activePage);
 
 var skills = [
     "HTML",
