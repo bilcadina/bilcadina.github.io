@@ -5,6 +5,7 @@
         background-color:rgb(250, 250, 250);
 }
     head {
+        padding: 30px;
         text-align: center;
     }
     img {
@@ -19,13 +20,14 @@
     }
 
     #header{
-     background-color:rgb(197, 230, 226) ;
+     background-color:rgb(171, 226, 220) ;
      align-content:stretch;
      padding: 50px;
      width: 200px;
      height: 250px;
     }
     h1, h2 {
+        font-size: 20px;
         text-align: center;
         color:rgb(29, 22, 31);
     }
@@ -42,7 +44,7 @@
     }
    #job-title{
      color: rgb(34, 36, 34);
-     text-align:right;
+     padding: 10px;
    }
     #side-menu{
        float: 1;
@@ -50,6 +52,7 @@
    }
 
     #top-menu-bar  {
+        height: 50px;
         text-align: center;
         color:rgb(228, 241, 232);
         background-color: #366074;
@@ -57,7 +60,7 @@
     #top-menu-bar li{
         display: inline;
         margin: 5px;
-        padding:5px;
+        padding:0px;
     }     
     #top-menu-bar a {
         text-decoration: none;
@@ -85,9 +88,18 @@
     }
 
     li {
-        color:rgb(189, 101, 29);
+        color:rgb(133, 5, 90);
     }
-    table {background-color:rgb(195, 209, 197)}
+
+    #skills li{
+        font-weight: 800;
+    }
+
+    #skills li span {
+        color:grey;
+    } 
+
+    table {background-color:rgb(157, 179, 160)}
 
     header, #side-menu section {
          margin: 2px;
@@ -98,7 +110,7 @@
             padding: 4px;
         }
     #side-menu, #main {
-        margin: 2px;
+        margin: 4px;
         padding: 4px;
         }
     
@@ -114,10 +126,12 @@
         flex: 1;
     }
     #main {
+        background-color: rgb(216, 216, 199);
         flex: 4;
     }
     footer {
-        height: 4px;
+    
+        height 4px;
         text-align: center;
         background-color: rgb(210, 228, 210);
     } 
