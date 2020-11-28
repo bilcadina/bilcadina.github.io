@@ -39,8 +39,6 @@ initMenu();
 
 showPage(activePage);
 
-
-
 var allSkills = [
     //tema se le aranjam cu functia sort cu endorsm mai mare sau alfabet
     { name: "HTML", endorsments: 10 },
@@ -55,7 +53,15 @@ function showSkills(skills) {
 });
 
 // TO DO add skill favorite
-var ul = document.querySelector("#skills ul")
-ul.innerHTML =  skillsLi.join("");
-}
-showSkills(allSkills);
+
+    var ul = document.querySelector("#skills ul")
+    ul.innerHTML =  skillsLi.join("");
+    }
+
+fetch("data/skills.json").then(function(r) {
+    return r.json();
+}).then(function(r2) {
+    console.info(`allSkills`, allSkills);
+    showSkills(allSkills);
+});
+
