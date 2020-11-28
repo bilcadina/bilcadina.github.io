@@ -36,8 +36,7 @@ header, footer, #side-menu section {
         flex: 1;
         padding: 5px;
     }
-    #main {
-        flex: 4;
+    
     }
     footer {
         min-height: 20px;

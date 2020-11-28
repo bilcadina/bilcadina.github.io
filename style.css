@@ -78,12 +78,14 @@
          background: rgb(175, 141, 141)
     }
 
-      .page {
-          background-color: rgb(250, 252, 250);
-          margin: 5px 0;
-          padding: 15px;
-          box-shadow: 0 0 0 0.1px;
-          border-radius: 2px;     
+    .page {
+        border-radius: 15px 50px 30px;
+        width:initial;
+        background-color: rgb(250, 252, 250);
+        margin: 2px 0;
+        padding: 100px;
+        box-shadow: 0 0 0 0.1px;
+        
     }
 
     li {
@@ -135,9 +137,9 @@
 
     footer {
         border-radius: 15px;
-        bottom: 5px;
-        height: 5px;
-        min-height: 2px;
+        bottom: 10px;
+        height: 10px;
+        min-height:20px;
         text-align: center;
         background-color: #1e3d38;
     } 
