@@ -46,12 +46,12 @@
        float: 1;
        padding: 5px;
        background-color:rgba(127, 199, 177, 0.534);
-       animation: leftside 10s infinite;
+       animation: leftside 15s infinite;
     }
         @keyframes leftside{
         0% {background-color:rgba(127, 199, 177, 0.534);}
-        25% {background-color: goldenrod;}
-        50% {background-color: rgb(14, 22, 131);}
+        25% {background-color: rgb(174, 226, 76);}
+        50% {background-color: rgb(103, 136, 209);}
         100% { background-color: rgb(77, 148, 77);}
     }
 
