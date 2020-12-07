@@ -1,7 +1,7 @@
     html{
     height: 100%;
     }
-
+    
     header {
         align-content:right;
         width: 200px;
@@ -30,7 +30,7 @@
         min-height: 200%;
         display:flex;
         flex-direction: column;
-        background-color: #f5f1f5;
+        background-color: rgb(250, 250, 250);
         margin: 500px;
         margin-top: 100px;
         padding:50px;
