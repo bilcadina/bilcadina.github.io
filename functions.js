@@ -39,13 +39,6 @@ initMenu();
 
 showPage(activePage);
 
-var allSkills = [
-    //tema se le aranjam cu functia sort cu endorsm mai mare sau alfabet
-    { name: "HTML", endorsments: 15 },
-    { name: "CSS" , endorsments: 5 },
-    { name: "JS", endorsments: 20 }
-];
-
 function getHTMLSkills(skills) {
     var skillsLi = skills.map(function(skill){
             return `<li class=" ${skill.endorsments > 9 ? "favorite" : ""}">
@@ -59,16 +52,21 @@ return skillsLi.join("");
 function showSkills(skills) {
     var html = getHTMLSkills(skills);
 
-// TO DO add skill favorite
 
     var ul = document.querySelector("#skills ul")
-    ul.innerHTML =  html;
+    ul.innerHTML = getHTMLSkills(skills);
     }
 
 fetch("data/skills.json").then(function(r) {
     return r.json();
-}).then(function(r2) {
-    console.info(`allSkills`, allSkills);
+}).then(function(allSkills) {
+    allSkills.sort(function(s1, s2) {
+       return s2.endorsments - s1.endorsments;
+       //return s1.name > s2.name ? -1 : 1;
+    });
+
+
     showSkills(allSkills);
 });
+//todo intro in es6
 

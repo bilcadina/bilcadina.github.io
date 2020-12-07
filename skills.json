@@ -1,7 +1,7 @@
 [
-    {name: "HTML", "Endorsments": 15}
-
-
+    {"name": "HTML", "endorsments": 15},
+    {"name": "CSS", "endorsments": 10},
+    {"name": "JS", "endorsments": 20}
 
 ]
 
