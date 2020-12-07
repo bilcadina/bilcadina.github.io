@@ -185,3 +185,7 @@
     header, section {
     flex:1;
     }
+    .favorite{
+        font-weight: 800px;
+        color:rgb(36, 107, 26);
+    }

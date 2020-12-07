@@ -48,8 +48,9 @@ var allSkills = [
 
 function getHTMLSkills(skills) {
     var skillsLi = skills.map(function(skill){
-        var endorsments = ` <span>&middot; ${skill.endorsments}</span>`;
-            return "<li>" + skill.name + endorsments +"</li>";
+            return `<li class=" ${skill.endorsments > 9 ? "favorite" : ""}">
+            ${skill.name} <span>&middot; ${skill.endorsments}</span>
+            </li>`;
 
 });
 return skillsLi.join("");
