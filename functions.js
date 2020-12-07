@@ -41,21 +41,27 @@ showPage(activePage);
 
 var allSkills = [
     //tema se le aranjam cu functia sort cu endorsm mai mare sau alfabet
-    { name: "HTML", endorsments: 10 },
-    { name: "CSS" , endorsments: 7 },
-    { name: "JS", endorsments: 7 }
+    { name: "HTML", endorsments: 15 },
+    { name: "CSS" , endorsments: 5 },
+    { name: "JS", endorsments: 20 }
 ];
 
-function showSkills(skills) {
+function getHTMLSkills(skills) {
     var skillsLi = skills.map(function(skill){
-    var endorsments = ` <span>&middot; ${skill.endorsments}</span>`;
-        return "<li>" + skill.name + endorsments +"</li>";
+        var endorsments = ` <span>&middot; ${skill.endorsments}</span>`;
+            return "<li>" + skill.name + endorsments +"</li>";
+
 });
+return skillsLi.join("");
+}
+
+function showSkills(skills) {
+    var html = getHTMLSkills(skills);
 
 // TO DO add skill favorite
 
     var ul = document.querySelector("#skills ul")
-    ul.innerHTML =  skillsLi.join("");
+    ul.innerHTML =  html;
     }
 
 fetch("data/skills.json").then(function(r) {
