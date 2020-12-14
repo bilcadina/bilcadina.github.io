@@ -38,24 +38,22 @@ initMenu();
 showPage(activePage);
 
 function getHTMLSkills(skills) {
-    return skillsLi = skills.map(function(skill){
-            return `<li class=" ${skill.endorsments > 9 ? "favorite" : ""}">
+    return skills.map(skill =>
+        `<li class=" ${skill.endorsments > 9 ? "favorite" : ""}">
             ${skill.name} <span>&middot; ${skill.endorsments}</span>
-            </li>`;
-}).join("");
+         </li>`
+    ).join("");
 }
 
 function showSkills(skills) {
-    var ul = document.querySelector("#skills ul");
+    const ul = document.querySelector("#skills ul");
     ul.innerHTML = getHTMLSkills(skills);
     }
 
-fetch("data/skills.json").then(function(r) {
-    return r.json();
-}).then(function(allSkills) {
-    allSkills.sort(function(s1, s2) {
-       return s2.endorsments - s1.endorsments;
-    });
+fetch("data/skills.json")
+.then(r => r.json())
+.then((allSkills) => {
+    allSkills.sort((s1, s2) => s2.endorsments - s1.endorsments);
 
     showSkills(allSkills);
 });
