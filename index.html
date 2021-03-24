@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        
-        <title>My CV</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="layout.css">
+<head>
 
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./all.css">
+    <meta charset="UTF-8">
+    <link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css">
+</head>
 
-    <body>
-        <header>
-            <div id="head">
+<body>
+
+    <header>
             <span><img src="eu.jpeg" width="100" class="Maya"></span>
-             <h2>  Bilc Adina Felicia</h2>
-            <p id="job-title">  Web Developer</p>
-            </div>
-        </header>
-        <div>
-            <ul id="top-menu-bar">
-                <li><a href="#" data-page="home">Home</a></li>
-                <li><a href="#" data-page="skills">Skills</a></li>
-                <li><a href="#" data-page="projects">Projects</a></li>
-                <li><a href="#" data-page="languages">Languages</a></li>
-            </ul>
-            </div>
+            <h2> Bilc Adina Felicia</h2>
+            <p id="info"> Front End Web Developer</p>
+    </header>
 
-        <section id="content">
-            <div id="side-menu">
-                <section>
-                    <form action="">
-                    <label for="e">Email</label>
-                    <input type="email" id="e" name="em">
-                    <input type="text" id="name" name="nume" placeholder="Your name">
-                    <button>
-                        Contact us
-                    </button>
-                    </form>
+    <div>
+        <ul id="top-menu-bar">
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="skills">Skills</a></li>
+            <li><a href="#" data-page="projects">Projects</a></li>
+            <li><a href="#" data-page="languages">Languages</a></li>
+        </ul>
+    </div>
+
+    <section id="content">
+        <div id="side-menu">
+              <h4> INFO </h4>
+            <div id="motto">
+                <section>.."There are no secrets to success. It is the result of preparation, hard work, and learning
+                    from failure."..
+                    <p>Name: Bîlc Adina Felicia
+                    <p>Phone: (+40) 755603900</p>
+                    <p>Email: adina15felicia@yahoo.com</p>
+
                 </section>
-                 <div id="motto">
-                     <section>.."There are no secrets to success. It is the result of preparation, hard work, and learning from failure."..
-                     </section>   
-                 </div>
+            </div>
+        </div>
+
+        <div id="main" ;>
+            <div id="home" class="page" style="display:none;">
+                <h2>Home</h2>
+                Bine ai venit! Aici vei afla cateva lucruri utile despre mine !
             </div>
 
-            <div id="main";>
-                <div id="home" class="page" style="display:none;">
-                    <h2>Home</h2>
-                    Bine ai venit! Aici vei afla cateva lucruri utile despre mine !
-                </div>
+            <div id="skills" class="page" style="display:none;">
+                <h2>Skills & Endorsments</h2>
+                <ul>
+                    <li class="favorite">Html</li>
+                    <li style>Java Script</li>
+                    <li class="favorite">Css </li>
 
-                <div id="skills" class="page" style="display:none;" >
-                    <h2>Skills & Endorsments</h2>
-                    <ul>
-                        <li class="favorite">Html</li>
-                        <li style>Java Script</li>
-                        <li class="favorite">Css </li>
-            
-                    </ul>
-                </div>
-
-                <div id="projects" class="page" style="display: none;">
-                    <h2>Projects</h2>
-                    Site in construction !
-                
-                </div>
-
-                <div id="languages" class="page" style="display:none;" >
-                    <table border="3">
-                        <tr>
-                            <h2>Known Languages</h2>
-                            <td><b>Romana</b></td>
-                            <td>C1</td>
-                        </tr>
-                        <tr>
-                            <td><b>Engleza</b></td>
-                            <td>C1</td>
-                        </tr>
-                    </table>
-                </div>
+                </ul>
             </div>
 
-        </section>
-        </table>
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                Site in construction !
 
-        <footer>
-            <a href="https://www.linkedin.com/feed/?trk=404_page">LinkedIn</a>
-            <a target="_blank_" href="https://fasttrackit.org/blog/">Curs web</a>
-        </footer>
+            </div>
 
-        <script src="functions.js">
-        </script>
+            <div id="languages" class="page" style="display:none;">
+                    <tr>
+                        <h2>Known Languages</h2>
+                        <td><b>Romana</b></td>
+                        <td>C1</td>
+                    </tr>
+                    <tr>
+                        <td><b>Engleza</b></td>
+                        <td>C1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
 
-        <script>
+    </section>
+    </table>
+
+    <footer>
+        <div class="social-media">
+        <a href="https://github.com/bilcadina" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/adina-b%C3%AElc-20533087/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    </footer>
+
+    <script src="functions.js"></script>
+
+    <script>
         /*console.info(2+4);
         var name='Adina';
         console.info(name);
@@ -102,7 +103,8 @@
         var skills = ['html', 'css', 'js'];
         console.info(skills)};
         */
-        </script>
-        
-    </body>
+    </script>
+
+</body>
+
 </html>
